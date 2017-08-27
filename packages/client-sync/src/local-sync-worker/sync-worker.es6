@@ -227,7 +227,7 @@ class SyncWorker {
       const fingerprint = ["{{ default }}", "access token refresh", err.message];
       NylasEnv.reportError(err, {fingerprint,
         rateLimit: {
-          ratePerHour: 30,
+          ratePerHour: 3000,
           key: `SyncError:RefreshToken:${err.message}`,
         },
       })
@@ -401,7 +401,7 @@ class SyncWorker {
       const fingerprint = ["{{ default }}", "sync loop", error.message];
       NylasEnv.reportError(error, {fingerprint,
         rateLimit: {
-          ratePerHour: 30,
+          ratePerHour: 3000,
           key: `SyncError:SyncLoop:${error.message}`,
         },
       });

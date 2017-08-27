@@ -116,7 +116,7 @@ export default class NylasAPIRequest {
       const fingerprint = ["{{ default }}", "api error", this.options.url, apiError.statusCode, msg];
       NylasEnv.reportError(apiError, {fingerprint,
         rateLimit: {
-          ratePerHour: 30,
+          ratePerHour: 3000,
           key: `APIError:${this.options.url}:${statusCode}:${msg}`,
         },
       });

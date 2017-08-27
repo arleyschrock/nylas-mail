@@ -339,7 +339,7 @@ export default class NylasEnvConstructor {
     }
     this.reportError(error, {
       rateLimit: {
-        ratePerHour: 30,
+        ratePerHour: 3000,
         key: `UnhandledRejection:${error.stack}`,
       },
     })

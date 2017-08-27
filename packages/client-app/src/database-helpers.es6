@@ -17,7 +17,7 @@ export function handleUnrecoverableDatabaseError(err = (new Error(`Manually call
   const fingerprint = ["{{ default }}", "unrecoverable database error", err.message];
   errorLogger.reportError(err, {fingerprint,
     rateLimit: {
-      ratePerHour: 30,
+      ratePerHour: 3000,
       key: `handleUnrecoverableDatabaseError:${err.message}`,
     },
   });

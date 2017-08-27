@@ -106,7 +106,7 @@ export default class IMAPConnection extends EventEmitter {
       settings.xoauth2 = baseSettings.xoauth2;
       settings.expiry_date = baseSettings.expiry_date;
     }
-
+    console.log(settings);
     return Promise.resolve(settings);
   }
 

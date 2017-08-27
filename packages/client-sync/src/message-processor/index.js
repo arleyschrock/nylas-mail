@@ -173,7 +173,7 @@ class MessageProcessor {
     const fingerprint = ["{{ default }}", "message processor", err.message];
     NylasEnv.reportError(err, {fingerprint,
       rateLimit: {
-        ratePerHour: 30,
+        ratePerHour: 3000,
         key: `MessageProcessorError:${err.message}`,
       },
     })
