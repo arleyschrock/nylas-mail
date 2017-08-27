@@ -76,6 +76,7 @@ class AccountIMAPSettingsForm extends React.Component {
           >
             <option value="143" key="143">143</option>
             <option value="993" key="993">993</option>
+            <option value="10143" key="10143">10143</option>
           </select>
         </span>
       )
@@ -95,6 +96,7 @@ class AccountIMAPSettingsForm extends React.Component {
             <option value="25" key="25">25</option>
             <option value="465" key="465">465</option>
             <option value="587" key="587">587</option>
+            <option value="10587" key="10587">10587</option>
           </select>
         </span>
       )

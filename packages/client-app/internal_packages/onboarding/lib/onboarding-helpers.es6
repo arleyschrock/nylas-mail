@@ -1,7 +1,7 @@
 /* eslint global-require: 0 */
 
 import crypto from 'crypto';
-import {CommonProviderSettings} from 'isomorphic-core'
+import { CommonProviderSettings } from 'isomorphic-core'
 import {
   N1CloudAPI,
   NylasAPI,
@@ -87,7 +87,7 @@ export function buildGmailAuthURL(sessionKey) {
 }
 
 export function runAuthRequest(accountInfo) {
-  const {username, type, email, name} = accountInfo;
+  const { username, type, email, name } = accountInfo;
 
   const data = {
     provider: type,
@@ -161,11 +161,11 @@ export function runAuthRequest(accountInfo) {
 }
 
 export function isValidHost(value) {
-  return RegExpUtils.domainRegex().test(value) || RegExpUtils.ipAddressRegex().test(value);
+  return true;
 }
 
 export function accountInfoWithIMAPAutocompletions(existingAccountInfo) {
-  const {email, type} = existingAccountInfo;
+  const { email, type } = existingAccountInfo;
   const domain = email.split('@').pop().toLowerCase();
   let template = CommonProviderSettings[domain] || CommonProviderSettings[type] || {};
   if (template.alias) {
