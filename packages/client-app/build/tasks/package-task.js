@@ -33,7 +33,7 @@ module.exports = (grunt) => {
     if (fs.existsSync(apmSymlink)) {
       fs.unlinkSync(apmSymlink);
     }
-    fs.rmdirSync(apmPackageDir);
+     fs.rmdirSync(apmPackageDir);
     callback();
   }
 
@@ -230,7 +230,7 @@ module.exports = (grunt) => {
       ],
       'out': grunt.config('outputDir'),
       'overwrite': true,
-      'prune': true,
+      'prune': false,
       /**
        * This will automatically look for the identity in the keychain. It
        * runs the `security find-identity` command. Note that

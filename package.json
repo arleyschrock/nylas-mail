@@ -21,8 +21,8 @@
     "fs-extra": "2.x.x",
     "fs-plus": "2.x.x",
     "glob": "7.x.x",
-    "grunt": "0.4.x",
-    "grunt-cli": "0.1.x",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-coffeelint": "git+https://github.com/atom/grunt-coffeelint.git#cfb99aa99811d52687969532bd5a98011ed95bfe",
     "grunt-coffeelint-cjsx": "0.1.x",
     "grunt-contrib-coffee": "0.12.x",
@@ -67,5 +67,8 @@
   "engines": {
     "node": "6.9.1",
     "npm": "3.10.8"
+  },
+  "dependencies": {
+    "coffee-react": "^5.0.1"
   }
 }
