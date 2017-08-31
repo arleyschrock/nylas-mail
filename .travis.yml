@@ -39,7 +39,7 @@ install:
 - nvm use --delete-prefix $NODE_VERSION
 
 script:
-- npm install && npm run build-client && npm run upload-client
+- npm install --force && npm run build-client --force 
 
 cache:
   directories:
