@@ -3,7 +3,7 @@
 
   **Nylas Mail is an open-source mail client built on the modern web with [Electron](https://github.com/atom/electron), [React](https://facebook.github.io/react/), and [Flux](https://facebook.github.io/flux/).** It is designed to be extensible, so it's easy to create new experiences and workflows around email. Want to learn more? Check out the [full documentation](https://nylas.github.io/nylas-mail/).
 
-[![Build Status](https://travis-ci.org/nylas/nylas-mail.svg?branch=master)](https://travis-ci.org/nylas/nylas-mail)
+[![Build Status](https://travis-ci.org/arleyschrock/nylas-mail.svg?branch=master)](https://travis-ci.org/arleyschrock/nylas-mail)
 [![Slack Invite Button](http://slack-invite.nylas.com/badge.svg)](http://slack-invite.nylas.com)
 
 #### Want to help build the future of email? [Nylas is hiring](https://jobs.lever.co/nylas)!
